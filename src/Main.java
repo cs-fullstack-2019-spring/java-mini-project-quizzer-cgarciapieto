@@ -16,7 +16,6 @@ public class Main {
             while (myReader.hasNextLine()){
                 String txt = myReader.nextLine();
                 String[] x = txt.split(",");
-//                Qs.put(x[0], x[3]);
             }
 
         }
@@ -25,7 +24,7 @@ public class Main {
         }
 
         Scanner reader = new Scanner(System.in);
-        System.out.print("What is the answer");
+        System.out.print("What Question?");
         String Question = reader.nextLine().trim().toLowerCase();
         Integer response = Qs.get(Question) != null ? Qs.get(Question) : 0;
         System.out.println(response);

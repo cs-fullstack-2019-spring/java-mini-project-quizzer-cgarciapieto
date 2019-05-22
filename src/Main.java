@@ -15,7 +15,7 @@ public class Main {
             myReader = new Scanner(myFile);
             while (myReader.hasNextLine()){
                 String txt = myReader.nextLine();
-                String[] x = txt.split(",");
+                System.out.println(txt.getKey() +  txt.getValue());
             }
 
         }
